@@ -1,0 +1,180 @@
+/* global styles */
+body{
+  font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+
+.light_color{
+  color: #fff;
+}
+
+.padding_style{
+  padding: 5rem 0;
+}
+
+.white_btn{
+  background-color: #fff;
+}
+
+.white_btn:hover{
+  background-color: #f9e3e3;
+}
+
+.page_btn{
+  text-transform: uppercase;
+  font-weight: 700;
+  border-radius: 2rem;
+  display: inline-block;
+  line-height: 1.25;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  border: 1px solid transparent;
+  padding: .8rem 1rem;
+  transition: all .2s ease-in-out;
+}
+
+.page_btn:hover{
+  color: #bfbdbc;
+  transform: scale(.97);
+}
+
+.red_btn{
+  background-color: rgb(240, 95, 64);
+  background-color: rgba(240, 95, 64, 0.95);
+}
+
+.red_btn:hover{
+  background-color: #ef674a;
+}
+
+/* end global styles */
+
+.navbar_style{
+  background-color: #58504d;
+  text-align: left;
+}
+
+.brand_name{
+  display: inline-block;
+  padding-top: .25rem;
+  padding-bottom: .25rem;
+  margin-right: 1rem;
+  font-size: 1.25rem;
+  line-height: inherit;
+  white-space: nowrap;
+  color: #bfbdbc;
+}
+
+.brand_name:hover{
+  text-decoration: none;
+  color: rgb(255,255,255);
+  color: rgba(255,255,255,.75);
+}
+
+.navbar_style a{
+  color: #bfbdbc;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.navbar_style li a{
+  font-size: 0.9rem;
+}
+
+header{
+  background-image: linear-gradient(rgb(74, 66, 63),rgba(74, 66, 63,0.4)), url(http://bit.ly/2vf1Hy5);
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  background-size: cover;
+}
+
+.page_header{
+  padding: 6rem 0;
+}
+
+.border_bottom_red{
+  max-width: 50px;
+  border: 2px solid rgb(240, 95, 64);
+  margin: 2rem auto;
+}
+
+.border_bottom_white{
+  max-width: 50px;
+  border: 2px solid #fff;
+  margin: 1.5rem auto;
+}
+
+.page_header span{
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 3rem;
+}
+
+.page_header p{
+  color: rgb(255,255,255);
+  color: rgba(255,255,255,.7);
+  padding-bottom: 2rem;
+}
+
+.about_us{
+  background-color: rgb(240, 95, 64);
+  background-color: rgba(240, 95, 64, 0.95);
+}
+
+.about_us p{
+  color: rgb(255,255,255);
+  color: rgba(255,255,255,.7);
+  padding-bottom: 1rem;
+}
+
+.services_section i{
+  color: rgb(240, 95, 64);
+  color: rgba(240, 95, 64, 0.95);
+}
+
+.services_section p{
+  color: #868e96;
+}
+
+.img_gallery .gallery_item{
+  margin: 0 auto;
+  padding: 0;
+}
+
+.img_gallery img{
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.call_to_action{
+  padding: 3rem 0;
+  background-color: #222222;
+}
+
+.call_to_action a{
+  margin-top: 1rem;
+}
+
+footer{
+  font-family: 'Merriweather', Georgia, serif;
+  padding-bottom: 1rem;
+}
+
+footer .e_mail{
+  color: rgb(240, 95, 64);
+  color: rgba(240, 95, 64, 0.95);
+}
+
+@media (max-width: 768px){
+  .page_header span{
+    font-size: 2.3rem;
+  }
+}
+
+@media (max-width: 576px){
+  .navbar_style{
+    display: inline-block;
+  }
+}
