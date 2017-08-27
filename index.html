@@ -16,48 +16,50 @@
     <script src="https://use.fontawesome.com/87c6a30ce1.js"></script>
   </head>
   <body>
+    <div class="main_section">
+      <nav class="navbar navbar-toggleable-md navbar-inverse navbar_style">
+        <div class="container">
+          <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#containerNavbar" aria-controls="containerNavbar" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
 
-    <nav class="navbar navbar-toggleable-md navbar-inverse fixed-top navbar_style">
-      <div class="container">
-        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#containerNavbar" aria-controls="containerNavbar" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <a class="brand_name" href="#index.html" title="Home page">Start Bootstrap</a>
+          <a class="brand_name" href="#index.html" title="Home page">Start Bootstrap</a>
 
-        <div class="collapse navbar-collapse" id="containerNavbar">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="#about-us" title="About">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#services" title="Services page">Services</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#portfolio" title="Portfolio page">Portfolio</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#contact" title="Contact us">Contact</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-
-    <header>
-      <div class="container">
-        <div class="row page_header light_color">
-          <div class="col-8 mx-auto">
-            <h1><span>Lorem ipsum dolor sit amet Morbi ultrices</span></h1>
-            <div class="border_bottom_red"></div>
-            <p>Proin blandit a arcu ac blandit. Quisque sed luctus nisi. Nam ac ornare lectus. Phasellus eu turpis blandit, ultrices nisi ut, luctus est. Nulla ultricies nibh id quam rutrum facilisis.</p>
-            <a class="red_btn page_btn" title="Click me to find out more">Find out more</a>
+          <div class="collapse navbar-collapse" id="containerNavbar">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="#about-us" title="About">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#services" title="Services page">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#portfolio" title="Portfolio page">Portfolio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact" title="Contact us">Contact</a>
+              </li>
+            </ul>
           </div>
         </div>
-      </div>
-    </header>
+      </nav>
+
+      <header>
+        <div class="container">
+          <div class="row page_header light_color">
+            <div class="col-8 mx-auto">
+              <h1><span>Lorem ipsum dolor sit amet Morbi ultrices</span></h1>
+              <div class="border_bottom_red"></div>
+              <p>Proin blandit a arcu ac blandit. Quisque sed luctus nisi. Nam ac ornare lectus. Phasellus eu turpis blandit, ultrices nisi ut, luctus est. Nulla ultricies nibh id quam rutrum facilisis.</p>
+              <a class="red_btn page_btn" title="Click me to find out more">Find out more</a>
+            </div>
+          </div>
+        </div>
+      </header>
+    </div>
 
     <section class="about_us" id="about-us">
-      <div class="container-fluid">
+      <div class="container">
         <div class="row padding_style">
           <div class="col-8 mx-auto">
             <h2 class="light_color">Quisque egestas et odio sed interdum!</h2>
@@ -71,29 +73,27 @@
 
     <section class="services_section padding_style" id="services">
       <div class="container">
-        <div class="row">
-          <div class="col-8 mx-auto">
-            <h2>At Your Service</h2>
-            <div class="border_bottom_red"></div>
-          </div>
+        <div class="text-center">
+          <h2>At Your Service</h2>
+          <div class="border_bottom_red"></div>
         </div>
         <div class="row">
-          <div class="col-lg-3 col-sm-6">
+          <div class="col-md-3">
             <i class="fa fa-diamond fa-4x" aria-hidden="true"></i>
             <h3>Sturdy Templates</h3>
             <p>Etiam volutpat sed ipsum non ornare. Nulla ut magna sed nunc gravida imperdiet.</p>
           </div>
-          <div class="col-lg-3 col-sm-6">
+          <div class="col-md-3">
             <i class="fa fa-paper-plane fa-4x" aria-hidden="true"></i>
             <h3>Ready to Ship</h3>
             <p>Suspendisse suscipit, purus vitae blandit interdum, magna libero auctor dui, pretium.</p>
           </div>
-          <div class="col-lg-3 col-sm-6">
+          <div class="col-md-3">
             <i class="fa fa-newspaper-o fa-4x" aria-hidden="true"></i>
             <h3>Up to Date</h3>
             <p>Nunc faucibus ante et nisl blandit congue. Donec porta tincidunt interdum. Praesent sed ligula.</p>
           </div>
-          <div class="col-lg-3 col-sm-6">
+          <div class="col-md-3">
             <i class="fa fa-heart fa-4x" aria-hidden="true"></i>
             <h3>Made with Love</h3>
             <p>Nulla facilisi. Fusce vel ullamcorper tellus, vitae viverra nibh. Aliquam id nibh enim.</p>
@@ -127,13 +127,9 @@
           </div>
         </div>
       </div>
-      <div class="call_to_action">
-        <div class="row">
-          <div class="col-8 mx-auto">
-            <h2 class="light_color">Quisque egestas et odio sed interdum!</h2>
-            <a class="white_btn page_btn" title="Download button">Download now!</a>
-          </div>
-        </div>
+      <div class="text-center call_to_action">
+        <h2 class="light_color">Quisque egestas et odio sed interdum!</h2>
+        <a class="white_btn page_btn" title="Download button">Download now!</a>
       </div>
     </section>
 
@@ -146,12 +142,12 @@
             <p>Proin blandit a arcu ac blandit. Quisque sed luctus nisi. Nam ac ornare lectus. Phasellus eu turpis blandit, ultrices nisi ut, luctus est. Nulla ultricies nibh id quam rutrum facilisis. </p>
           </div>
         </div>
-        <div class="row">
-          <div class="col-4 ml-auto text-center">
+        <div class="row text-center">
+          <div class="col-4 ml-auto">
             <i class="fa fa-phone fa-3x" aria-hidden="true"></i>
             <p>123-456-7890</p>
           </div>
-          <div class="col-4 mr-auto text-center">
+          <div class="col-4 mr-auto">
             <i class="fa fa-envelope-o fa-3x" aria-hidden="true"></i>
             <p><a href="mailto:email@email.com" class="e_mail">email@email.com</a></p>
           </div>
