@@ -23,12 +23,12 @@ body{
 .page_btn{
   text-transform: uppercase;
   font-weight: 700;
-  border-radius: 2rem;
   display: inline-block;
   line-height: 1.25;
   text-align: center;
   white-space: nowrap;
   vertical-align: middle;
+  border-radius: 2rem;
   border: 1px solid transparent;
   padding: .8rem 1rem;
   transition: all .2s ease-in-out;
@@ -48,28 +48,31 @@ body{
   background-color: #ef674a;
 }
 
+.border_bottom_red{
+  max-width: 50px;
+  border: 2px solid rgb(240, 95, 64);
+  margin: 2rem auto;
+}
+
+.border_bottom_white{
+  max-width: 50px;
+  border: 2px solid #fff;
+  margin: 1.5rem auto;
+}
+
 /* end global styles */
 
+.main_section{
+  background-image: linear-gradient(rgb(74, 66, 63),rgba(74, 66, 63,0.4)), url(http://bit.ly/2vf1Hy5);
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  background-size: cover;
+}
+
 .navbar_style{
-  background-color: #58504d;
   text-align: left;
-}
-
-.brand_name{
-  display: inline-block;
-  padding-top: .25rem;
-  padding-bottom: .25rem;
-  margin-right: 1rem;
-  font-size: 1.25rem;
-  line-height: inherit;
-  white-space: nowrap;
-  color: #bfbdbc;
-}
-
-.brand_name:hover{
-  text-decoration: none;
-  color: rgb(255,255,255);
-  color: rgba(255,255,255,.75);
+  background: none;
+  background-color: transparent;
 }
 
 .navbar_style a{
@@ -82,27 +85,25 @@ body{
   font-size: 0.9rem;
 }
 
-header{
-  background-image: linear-gradient(rgb(74, 66, 63),rgba(74, 66, 63,0.4)), url(http://bit.ly/2vf1Hy5);
-  background-repeat: no-repeat;
-  background-position: bottom center;
-  background-size: cover;
+.brand_name{
+  display: inline-block;
+  padding-top: .25rem;
+  padding-bottom: .25rem;
+  padding-right: 6rem;
+  font-size: 1.25rem;
+  line-height: inherit;
+  white-space: nowrap;
+  color: #bfbdbc;
+}
+
+.brand_name:hover{
+  text-decoration: none;
+  color: rgb(255,255,255);
+  color: rgba(255,255,255,.75);
 }
 
 .page_header{
   padding: 6rem 0;
-}
-
-.border_bottom_red{
-  max-width: 50px;
-  border: 2px solid rgb(240, 95, 64);
-  margin: 2rem auto;
-}
-
-.border_bottom_white{
-  max-width: 50px;
-  border: 2px solid #fff;
-  margin: 1.5rem auto;
 }
 
 .page_header span{
@@ -140,12 +141,17 @@ header{
 .img_gallery .gallery_item{
   margin: 0 auto;
   padding: 0;
+  overflow: hidden;
 }
 
 .img_gallery img{
   width: 100%;
   height: 100%;
-  overflow: hidden;
+  transition: all .2s ease-in-out;
+}
+
+.img_gallery img:hover{
+  transform: scale(1.01);
 }
 
 .call_to_action{
@@ -174,7 +180,7 @@ footer .e_mail{
 }
 
 @media (max-width: 576px){
-  .navbar_style{
-    display: inline-block;
+  .navbar_style > .container{
+    margin: 0;
   }
 }
